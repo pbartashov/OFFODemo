@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71A2543A2AAF2D7400409270 /* OFFODemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A254392AAF2D7400409270 /* OFFODemoApp.swift */; };
+		71A2543C2AAF2D7400409270 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2543B2AAF2D7400409270 /* ContentView.swift */; };
+		71A2543E2AAF2D7600409270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A2543D2AAF2D7600409270 /* Assets.xcassets */; };
+		71A254412AAF2D7600409270 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A254402AAF2D7600409270 /* Preview Assets.xcassets */; };
+		71A2544B2AAF2D7600409270 /* OFFODemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2544A2AAF2D7600409270 /* OFFODemoTests.swift */; };
+		71A254552AAF2D7600409270 /* OFFODemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A254542AAF2D7600409270 /* OFFODemoUITests.swift */; };
+		71A254572AAF2D7600409270 /* OFFODemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A254562AAF2D7600409270 /* OFFODemoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71A254472AAF2D7600409270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A2542E2AAF2D7400409270 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71A254352AAF2D7400409270;
+			remoteInfo = OFFODemo;
+		};
+		71A254512AAF2D7600409270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A2542E2AAF2D7400409270 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71A254352AAF2D7400409270;
+			remoteInfo = OFFODemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71A254362AAF2D7400409270 /* OFFODemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OFFODemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A254392AAF2D7400409270 /* OFFODemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OFFODemoApp.swift; sourceTree = "<group>"; };
+		71A2543B2AAF2D7400409270 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		71A2543D2AAF2D7600409270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71A254402AAF2D7600409270 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		71A254462AAF2D7600409270 /* OFFODemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OFFODemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A2544A2AAF2D7600409270 /* OFFODemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OFFODemoTests.swift; sourceTree = "<group>"; };
+		71A254502AAF2D7600409270 /* OFFODemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OFFODemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A254542AAF2D7600409270 /* OFFODemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OFFODemoUITests.swift; sourceTree = "<group>"; };
+		71A254562AAF2D7600409270 /* OFFODemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OFFODemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71A254332AAF2D7400409270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A254432AAF2D7600409270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A2544D2AAF2D7600409270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71A2542D2AAF2D7400409270 = {
+			isa = PBXGroup;
+			children = (
+				71A254382AAF2D7400409270 /* OFFODemo */,
+				71A254492AAF2D7600409270 /* OFFODemoTests */,
+				71A254532AAF2D7600409270 /* OFFODemoUITests */,
+				71A254372AAF2D7400409270 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71A254372AAF2D7400409270 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71A254362AAF2D7400409270 /* OFFODemo.app */,
+				71A254462AAF2D7600409270 /* OFFODemoTests.xctest */,
+				71A254502AAF2D7600409270 /* OFFODemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71A254382AAF2D7400409270 /* OFFODemo */ = {
+			isa = PBXGroup;
+			children = (
+				71A254392AAF2D7400409270 /* OFFODemoApp.swift */,
+				71A2543B2AAF2D7400409270 /* ContentView.swift */,
+				71A2543D2AAF2D7600409270 /* Assets.xcassets */,
+				71A2543F2AAF2D7600409270 /* Preview Content */,
+			);
+			path = OFFODemo;
+			sourceTree = "<group>";
+		};
+		71A2543F2AAF2D7600409270 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				71A254402AAF2D7600409270 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		71A254492AAF2D7600409270 /* OFFODemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				71A2544A2AAF2D7600409270 /* OFFODemoTests.swift */,
+			);
+			path = OFFODemoTests;
+			sourceTree = "<group>";
+		};
+		71A254532AAF2D7600409270 /* OFFODemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				71A254542AAF2D7600409270 /* OFFODemoUITests.swift */,
+				71A254562AAF2D7600409270 /* OFFODemoUITestsLaunchTests.swift */,
+			);
+			path = OFFODemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71A254352AAF2D7400409270 /* OFFODemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71A2545A2AAF2D7600409270 /* Build configuration list for PBXNativeTarget "OFFODemo" */;
+			buildPhases = (
+				71A254322AAF2D7400409270 /* Sources */,
+				71A254332AAF2D7400409270 /* Frameworks */,
+				71A254342AAF2D7400409270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OFFODemo;
+			productName = OFFODemo;
+			productReference = 71A254362AAF2D7400409270 /* OFFODemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71A254452AAF2D7600409270 /* OFFODemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71A2545D2AAF2D7600409270 /* Build configuration list for PBXNativeTarget "OFFODemoTests" */;
+			buildPhases = (
+				71A254422AAF2D7600409270 /* Sources */,
+				71A254432AAF2D7600409270 /* Frameworks */,
+				71A254442AAF2D7600409270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71A254482AAF2D7600409270 /* PBXTargetDependency */,
+			);
+			name = OFFODemoTests;
+			productName = OFFODemoTests;
+			productReference = 71A254462AAF2D7600409270 /* OFFODemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		71A2544F2AAF2D7600409270 /* OFFODemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71A254602AAF2D7600409270 /* Build configuration list for PBXNativeTarget "OFFODemoUITests" */;
+			buildPhases = (
+				71A2544C2AAF2D7600409270 /* Sources */,
+				71A2544D2AAF2D7600409270 /* Frameworks */,
+				71A2544E2AAF2D7600409270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71A254522AAF2D7600409270 /* PBXTargetDependency */,
+			);
+			name = OFFODemoUITests;
+			productName = OFFODemoUITests;
+			productReference = 71A254502AAF2D7600409270 /* OFFODemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71A2542E2AAF2D7400409270 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					71A254352AAF2D7400409270 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					71A254452AAF2D7600409270 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 71A254352AAF2D7400409270;
+					};
+					71A2544F2AAF2D7600409270 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 71A254352AAF2D7400409270;
+					};
+				};
+			};
+			buildConfigurationList = 71A254312AAF2D7400409270 /* Build configuration list for PBXProject "OFFODemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71A2542D2AAF2D7400409270;
+			productRefGroup = 71A254372AAF2D7400409270 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71A254352AAF2D7400409270 /* OFFODemo */,
+				71A254452AAF2D7600409270 /* OFFODemoTests */,
+				71A2544F2AAF2D7600409270 /* OFFODemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71A254342AAF2D7400409270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A254412AAF2D7600409270 /* Preview Assets.xcassets in Resources */,
+				71A2543E2AAF2D7600409270 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A254442AAF2D7600409270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A2544E2AAF2D7600409270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71A254322AAF2D7400409270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A2543C2AAF2D7400409270 /* ContentView.swift in Sources */,
+				71A2543A2AAF2D7400409270 /* OFFODemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A254422AAF2D7600409270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A2544B2AAF2D7600409270 /* OFFODemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A2544C2AAF2D7600409270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A254572AAF2D7600409270 /* OFFODemoUITestsLaunchTests.swift in Sources */,
+				71A254552AAF2D7600409270 /* OFFODemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71A254482AAF2D7600409270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71A254352AAF2D7400409270 /* OFFODemo */;
+			targetProxy = 71A254472AAF2D7600409270 /* PBXContainerItemProxy */;
+		};
+		71A254522AAF2D7600409270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71A254352AAF2D7400409270 /* OFFODemo */;
+			targetProxy = 71A254512AAF2D7600409270 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		71A254582AAF2D7600409270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71A254592AAF2D7600409270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71A2545B2AAF2D7600409270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OFFODemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pB.OFFODemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71A2545C2AAF2D7600409270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OFFODemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pB.OFFODemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71A2545E2AAF2D7600409270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pB.OFFODemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OFFODemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OFFODemo";
+			};
+			name = Debug;
+		};
+		71A2545F2AAF2D7600409270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pB.OFFODemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OFFODemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OFFODemo";
+			};
+			name = Release;
+		};
+		71A254612AAF2D7600409270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pB.OFFODemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OFFODemo;
+			};
+			name = Debug;
+		};
+		71A254622AAF2D7600409270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pB.OFFODemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OFFODemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71A254312AAF2D7400409270 /* Build configuration list for PBXProject "OFFODemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71A254582AAF2D7600409270 /* Debug */,
+				71A254592AAF2D7600409270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71A2545A2AAF2D7600409270 /* Build configuration list for PBXNativeTarget "OFFODemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71A2545B2AAF2D7600409270 /* Debug */,
+				71A2545C2AAF2D7600409270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71A2545D2AAF2D7600409270 /* Build configuration list for PBXNativeTarget "OFFODemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71A2545E2AAF2D7600409270 /* Debug */,
+				71A2545F2AAF2D7600409270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71A254602AAF2D7600409270 /* Build configuration list for PBXNativeTarget "OFFODemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71A254612AAF2D7600409270 /* Debug */,
+				71A254622AAF2D7600409270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71A2542E2AAF2D7400409270 /* Project object */;
+}
