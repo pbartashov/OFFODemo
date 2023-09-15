@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  OFFODemo
+
+  Created by Павел Барташов on 13.09.2023.
+  
+*/
+
+// DatabaseError
+"storeDatabaseError" = "Unable to add data to storage";
+"invalidManagedObjectTypeDatabaseError" = "Object model not found.";
+"notFoundDatabaseError" = "Object not found.";

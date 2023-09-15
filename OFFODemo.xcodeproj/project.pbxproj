@@ -7,6 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		718444482AB0873F00A9B6CF /* CounterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444472AB0873F00A9B6CF /* CounterListViewModel.swift */; };
+		7184444C2AB08F9000A9B6CF /* CounterStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184444B2AB08F9000A9B6CF /* CounterStorage.swift */; };
+		718444502AB090E700A9B6CF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184444E2AB090E700A9B6CF /* Repository.swift */; };
+		718444512AB090E700A9B6CF /* -PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184444F2AB090E700A9B6CF /* -PostRepository.swift */; };
+		7184445A2AB090FF00A9B6CF /* CounterEntity+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444542AB090FF00A9B6CF /* CounterEntity+.swift */; };
+		718444692AB0926A00A9B6CF /* CoreDataStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 718444682AB0926A00A9B6CF /* CoreDataStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7184446C2AB0926A00A9B6CF /* CoreDataStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718444662AB0926A00A9B6CF /* CoreDataStorage.framework */; };
+		7184446D2AB0926A00A9B6CF /* CoreDataStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 718444662AB0926A00A9B6CF /* CoreDataStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		718444722AB0928300A9B6CF /* CoreDataContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444572AB090FF00A9B6CF /* CoreDataContextProvider.swift */; };
+		718444732AB0928300A9B6CF /* FetchResultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444582AB090FF00A9B6CF /* FetchResultService.swift */; };
+		718444742AB0928300A9B6CF /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444592AB090FF00A9B6CF /* CoreDataRepository.swift */; };
+		718444752AB0931A00A9B6CF /* DomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184445F2AB0915600A9B6CF /* DomainModel.swift */; };
+		718444772AB0935600A9B6CF /* DataBaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444762AB0935600A9B6CF /* DataBaseError.swift */; };
+		7184447A2AB093E500A9B6CF /* CoreDataRepository+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444792AB093E500A9B6CF /* CoreDataRepository+.swift */; };
+		7184447C2AB0969F00A9B6CF /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184447B2AB0969F00A9B6CF /* AppDependencyContainer.swift */; };
+		7184447F2AB1D05300A9B6CF /* DomainModelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184447E2AB1D05300A9B6CF /* DomainModelRepository.swift */; };
+		718444822AB1D6B900A9B6CF /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444812AB1D6B900A9B6CF /* String+.swift */; };
+		718444832AB1D6BF00A9B6CF /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444812AB1D6B900A9B6CF /* String+.swift */; };
+		718444872AB1D7AA00A9B6CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 718444892AB1D7AA00A9B6CF /* Localizable.strings */; };
+		7184448B2AB1D7FC00A9B6CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 718444892AB1D7AA00A9B6CF /* Localizable.strings */; };
+		7184448E2AB3230F00A9B6CF /* OFFODemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7184448C2AB3230F00A9B6CF /* OFFODemo.xcdatamodeld */; };
+		718444A72AB328BE00A9B6CF /* RoomEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444A32AB328BE00A9B6CF /* RoomEntity+CoreDataClass.swift */; };
+		718444A82AB328BE00A9B6CF /* RoomEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444A42AB328BE00A9B6CF /* RoomEntity+CoreDataProperties.swift */; };
+		718444A92AB328BE00A9B6CF /* CounterEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444A52AB328BE00A9B6CF /* CounterEntity+CoreDataClass.swift */; };
+		718444AA2AB328BE00A9B6CF /* CounterEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444A62AB328BE00A9B6CF /* CounterEntity+CoreDataProperties.swift */; };
+		718444AC2AB32BC700A9B6CF /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718444AB2AB32BC700A9B6CF /* CounterViewModel.swift */; };
+		718A3F1C2AB4789C0013DEBF /* RoomSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718A3F1B2AB4789C0013DEBF /* RoomSample.swift */; };
+		718A3F1F2AB4793F0013DEBF /* CounterListViewModelSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718A3F1E2AB4793F0013DEBF /* CounterListViewModelSample.swift */; };
+		718CF62C2AAF318800D31A10 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CF62B2AAF318800D31A10 /* Counter.swift */; };
+		718CF62E2AAF333B00D31A10 /* CounterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CF62D2AAF333B00D31A10 /* CounterType.swift */; };
+		718CF6302AAF339400D31A10 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CF62F2AAF339400D31A10 /* Room.swift */; };
+		718CF6322AAF33ED00D31A10 /* CounterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CF6312AAF33ED00D31A10 /* CounterList.swift */; };
 		71A2543A2AAF2D7400409270 /* OFFODemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A254392AAF2D7400409270 /* OFFODemoApp.swift */; };
 		71A2543C2AAF2D7400409270 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2543B2AAF2D7400409270 /* ContentView.swift */; };
 		71A2543E2AAF2D7600409270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A2543D2AAF2D7600409270 /* Assets.xcassets */; };
@@ -17,6 +49,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7184446A2AB0926A00A9B6CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A2542E2AAF2D7400409270 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 718444652AB0926900A9B6CF;
+			remoteInfo = CoreDataStorage;
+		};
 		71A254472AAF2D7600409270 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 71A2542E2AAF2D7400409270 /* Project object */;
@@ -33,7 +72,51 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		718444712AB0926A00A9B6CF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7184446D2AB0926A00A9B6CF /* CoreDataStorage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		718444472AB0873F00A9B6CF /* CounterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListViewModel.swift; sourceTree = "<group>"; };
+		7184444B2AB08F9000A9B6CF /* CounterStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterStorage.swift; sourceTree = "<group>"; };
+		7184444E2AB090E700A9B6CF /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		7184444F2AB090E700A9B6CF /* -PostRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "-PostRepository.swift"; sourceTree = "<group>"; };
+		718444542AB090FF00A9B6CF /* CounterEntity+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CounterEntity+.swift"; sourceTree = "<group>"; };
+		718444572AB090FF00A9B6CF /* CoreDataContextProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataContextProvider.swift; sourceTree = "<group>"; };
+		718444582AB090FF00A9B6CF /* FetchResultService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchResultService.swift; sourceTree = "<group>"; };
+		718444592AB090FF00A9B6CF /* CoreDataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataRepository.swift; sourceTree = "<group>"; };
+		7184445F2AB0915600A9B6CF /* DomainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainModel.swift; sourceTree = "<group>"; };
+		718444662AB0926A00A9B6CF /* CoreDataStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDataStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		718444682AB0926A00A9B6CF /* CoreDataStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataStorage.h; sourceTree = "<group>"; };
+		718444762AB0935600A9B6CF /* DataBaseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseError.swift; sourceTree = "<group>"; };
+		718444792AB093E500A9B6CF /* CoreDataRepository+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataRepository+.swift"; sourceTree = "<group>"; };
+		7184447B2AB0969F00A9B6CF /* AppDependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencyContainer.swift; sourceTree = "<group>"; };
+		7184447E2AB1D05300A9B6CF /* DomainModelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModelRepository.swift; sourceTree = "<group>"; };
+		718444812AB1D6B900A9B6CF /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		718444882AB1D7AA00A9B6CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7184448A2AB1D7C600A9B6CF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7184448D2AB3230F00A9B6CF /* OFFODemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OFFODemo.xcdatamodel; sourceTree = "<group>"; };
+		718444A32AB328BE00A9B6CF /* RoomEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoomEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		718444A42AB328BE00A9B6CF /* RoomEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoomEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		718444A52AB328BE00A9B6CF /* CounterEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CounterEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		718444A62AB328BE00A9B6CF /* CounterEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CounterEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		718444AB2AB32BC700A9B6CF /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
+		718A3F1B2AB4789C0013DEBF /* RoomSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSample.swift; sourceTree = "<group>"; };
+		718A3F1E2AB4793F0013DEBF /* CounterListViewModelSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListViewModelSample.swift; sourceTree = "<group>"; };
+		718CF62B2AAF318800D31A10 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		718CF62D2AAF333B00D31A10 /* CounterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterType.swift; sourceTree = "<group>"; };
+		718CF62F2AAF339400D31A10 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		718CF6312AAF33ED00D31A10 /* CounterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterList.swift; sourceTree = "<group>"; };
 		71A254362AAF2D7400409270 /* OFFODemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OFFODemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A254392AAF2D7400409270 /* OFFODemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OFFODemoApp.swift; sourceTree = "<group>"; };
 		71A2543B2AAF2D7400409270 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,10 +130,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		718444632AB0926900A9B6CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71A254332AAF2D7400409270 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7184446C2AB0926A00A9B6CF /* CoreDataStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,12 +162,153 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		718444462AB0871B00A9B6CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				718444472AB0873F00A9B6CF /* CounterListViewModel.swift */,
+				718444AB2AB32BC700A9B6CF /* CounterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		718444492AB088EC00A9B6CF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				718CF62A2AAF312900D31A10 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7184444A2AB088F900A9B6CF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7184444D2AB090E700A9B6CF /* Repository */,
+				7184444B2AB08F9000A9B6CF /* CounterStorage.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7184444D2AB090E700A9B6CF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				718444522AB090FF00A9B6CF /* CoreData */,
+				7184444E2AB090E700A9B6CF /* Repository.swift */,
+				7184444F2AB090E700A9B6CF /* -PostRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		718444522AB090FF00A9B6CF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				718444532AB090FF00A9B6CF /* Entity */,
+				718444792AB093E500A9B6CF /* CoreDataRepository+.swift */,
+				7184447E2AB1D05300A9B6CF /* DomainModelRepository.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		718444532AB090FF00A9B6CF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				718444A52AB328BE00A9B6CF /* CounterEntity+CoreDataClass.swift */,
+				718444A62AB328BE00A9B6CF /* CounterEntity+CoreDataProperties.swift */,
+				718444542AB090FF00A9B6CF /* CounterEntity+.swift */,
+				718444A32AB328BE00A9B6CF /* RoomEntity+CoreDataClass.swift */,
+				718444A42AB328BE00A9B6CF /* RoomEntity+CoreDataProperties.swift */,
+				7184448C2AB3230F00A9B6CF /* OFFODemo.xcdatamodeld */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		718444672AB0926A00A9B6CF /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				718444782AB0936800A9B6CF /* Error */,
+				7184445F2AB0915600A9B6CF /* DomainModel.swift */,
+				718444572AB090FF00A9B6CF /* CoreDataContextProvider.swift */,
+				718444582AB090FF00A9B6CF /* FetchResultService.swift */,
+				718444592AB090FF00A9B6CF /* CoreDataRepository.swift */,
+				718444682AB0926A00A9B6CF /* CoreDataStorage.h */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		718444782AB0936800A9B6CF /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				718444762AB0935600A9B6CF /* DataBaseError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		7184447D2AB096A700A9B6CF /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				7184447B2AB0969F00A9B6CF /* AppDependencyContainer.swift */,
+			);
+			path = DependencyContainer;
+			sourceTree = "<group>";
+		};
+		718444802AB1D6A900A9B6CF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				718444812AB1D6B900A9B6CF /* String+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		718444842AB1D6EB00A9B6CF /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				718444892AB1D7AA00A9B6CF /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		718A3F1D2AB478A50013DEBF /* SampleData */ = {
+			isa = PBXGroup;
+			children = (
+				718A3F1B2AB4789C0013DEBF /* RoomSample.swift */,
+				718A3F1E2AB4793F0013DEBF /* CounterListViewModelSample.swift */,
+			);
+			path = SampleData;
+			sourceTree = "<group>";
+		};
+		718CF6282AAF311100D31A10 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				71A2543B2AAF2D7400409270 /* ContentView.swift */,
+				718CF6312AAF33ED00D31A10 /* CounterList.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		718CF6292AAF311E00D31A10 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				71A254392AAF2D7400409270 /* OFFODemoApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		718CF62A2AAF312900D31A10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				718CF62B2AAF318800D31A10 /* Counter.swift */,
+				718CF62F2AAF339400D31A10 /* Room.swift */,
+				718CF62D2AAF333B00D31A10 /* CounterType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		71A2542D2AAF2D7400409270 = {
 			isa = PBXGroup;
 			children = (
 				71A254382AAF2D7400409270 /* OFFODemo */,
 				71A254492AAF2D7600409270 /* OFFODemoTests */,
 				71A254532AAF2D7600409270 /* OFFODemoUITests */,
+				718444672AB0926A00A9B6CF /* CoreDataStorage */,
 				71A254372AAF2D7400409270 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +319,7 @@
 				71A254362AAF2D7400409270 /* OFFODemo.app */,
 				71A254462AAF2D7600409270 /* OFFODemoTests.xctest */,
 				71A254502AAF2D7600409270 /* OFFODemoUITests.xctest */,
+				718444662AB0926A00A9B6CF /* CoreDataStorage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,8 +327,14 @@
 		71A254382AAF2D7400409270 /* OFFODemo */ = {
 			isa = PBXGroup;
 			children = (
-				71A254392AAF2D7400409270 /* OFFODemoApp.swift */,
-				71A2543B2AAF2D7400409270 /* ContentView.swift */,
+				718444842AB1D6EB00A9B6CF /* Localization */,
+				718444802AB1D6A900A9B6CF /* Extension */,
+				7184447D2AB096A700A9B6CF /* DependencyContainer */,
+				718CF6292AAF311E00D31A10 /* App */,
+				718444492AB088EC00A9B6CF /* Data */,
+				7184444A2AB088F900A9B6CF /* Service */,
+				718444462AB0871B00A9B6CF /* ViewModel */,
+				718CF6282AAF311100D31A10 /* UI */,
 				71A2543D2AAF2D7600409270 /* Assets.xcassets */,
 				71A2543F2AAF2D7600409270 /* Preview Content */,
 			);
@@ -105,6 +344,7 @@
 		71A2543F2AAF2D7600409270 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				718A3F1D2AB478A50013DEBF /* SampleData */,
 				71A254402AAF2D7600409270 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -129,7 +369,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		718444612AB0926900A9B6CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718444692AB0926A00A9B6CF /* CoreDataStorage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		718444652AB0926900A9B6CF /* CoreDataStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7184446E2AB0926A00A9B6CF /* Build configuration list for PBXNativeTarget "CoreDataStorage" */;
+			buildPhases = (
+				718444612AB0926900A9B6CF /* Headers */,
+				718444622AB0926900A9B6CF /* Sources */,
+				718444632AB0926900A9B6CF /* Frameworks */,
+				718444642AB0926900A9B6CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataStorage;
+			productName = CoreDataStorage;
+			productReference = 718444662AB0926A00A9B6CF /* CoreDataStorage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		71A254352AAF2D7400409270 /* OFFODemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71A2545A2AAF2D7600409270 /* Build configuration list for PBXNativeTarget "OFFODemo" */;
@@ -137,10 +406,12 @@
 				71A254322AAF2D7400409270 /* Sources */,
 				71A254332AAF2D7400409270 /* Frameworks */,
 				71A254342AAF2D7400409270 /* Resources */,
+				718444712AB0926A00A9B6CF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7184446B2AB0926A00A9B6CF /* PBXTargetDependency */,
 			);
 			name = OFFODemo;
 			productName = OFFODemo;
@@ -193,6 +464,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					718444652AB0926900A9B6CF = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					71A254352AAF2D7400409270 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -213,6 +487,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 71A2542D2AAF2D7400409270;
 			productRefGroup = 71A254372AAF2D7400409270 /* Products */;
@@ -222,16 +497,26 @@
 				71A254352AAF2D7400409270 /* OFFODemo */,
 				71A254452AAF2D7600409270 /* OFFODemoTests */,
 				71A2544F2AAF2D7600409270 /* OFFODemoUITests */,
+				718444652AB0926900A9B6CF /* CoreDataStorage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		718444642AB0926900A9B6CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7184448B2AB1D7FC00A9B6CF /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71A254342AAF2D7400409270 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				71A254412AAF2D7600409270 /* Preview Assets.xcassets in Resources */,
+				718444872AB1D7AA00A9B6CF /* Localizable.strings in Resources */,
 				71A2543E2AAF2D7600409270 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,12 +538,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		718444622AB0926900A9B6CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718444722AB0928300A9B6CF /* CoreDataContextProvider.swift in Sources */,
+				718444752AB0931A00A9B6CF /* DomainModel.swift in Sources */,
+				718444742AB0928300A9B6CF /* CoreDataRepository.swift in Sources */,
+				718444772AB0935600A9B6CF /* DataBaseError.swift in Sources */,
+				718444832AB1D6BF00A9B6CF /* String+.swift in Sources */,
+				718444732AB0928300A9B6CF /* FetchResultService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71A254322AAF2D7400409270 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7184445A2AB090FF00A9B6CF /* CounterEntity+.swift in Sources */,
 				71A2543C2AAF2D7400409270 /* ContentView.swift in Sources */,
+				718444512AB090E700A9B6CF /* -PostRepository.swift in Sources */,
+				7184447A2AB093E500A9B6CF /* CoreDataRepository+.swift in Sources */,
 				71A2543A2AAF2D7400409270 /* OFFODemoApp.swift in Sources */,
+				718444AA2AB328BE00A9B6CF /* CounterEntity+CoreDataProperties.swift in Sources */,
+				718444A82AB328BE00A9B6CF /* RoomEntity+CoreDataProperties.swift in Sources */,
+				718A3F1F2AB4793F0013DEBF /* CounterListViewModelSample.swift in Sources */,
+				718CF62E2AAF333B00D31A10 /* CounterType.swift in Sources */,
+				718CF62C2AAF318800D31A10 /* Counter.swift in Sources */,
+				7184448E2AB3230F00A9B6CF /* OFFODemo.xcdatamodeld in Sources */,
+				718A3F1C2AB4789C0013DEBF /* RoomSample.swift in Sources */,
+				718444A72AB328BE00A9B6CF /* RoomEntity+CoreDataClass.swift in Sources */,
+				718CF6322AAF33ED00D31A10 /* CounterList.swift in Sources */,
+				718444A92AB328BE00A9B6CF /* CounterEntity+CoreDataClass.swift in Sources */,
+				7184447C2AB0969F00A9B6CF /* AppDependencyContainer.swift in Sources */,
+				7184444C2AB08F9000A9B6CF /* CounterStorage.swift in Sources */,
+				718444822AB1D6B900A9B6CF /* String+.swift in Sources */,
+				718CF6302AAF339400D31A10 /* Room.swift in Sources */,
+				718444AC2AB32BC700A9B6CF /* CounterViewModel.swift in Sources */,
+				718444482AB0873F00A9B6CF /* CounterListViewModel.swift in Sources */,
+				718444502AB090E700A9B6CF /* Repository.swift in Sources */,
+				7184447F2AB1D05300A9B6CF /* DomainModelRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +601,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7184446B2AB0926A00A9B6CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 718444652AB0926900A9B6CF /* CoreDataStorage */;
+			targetProxy = 7184446A2AB0926A00A9B6CF /* PBXContainerItemProxy */;
+		};
 		71A254482AAF2D7600409270 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 71A254352AAF2D7400409270 /* OFFODemo */;
@@ -294,11 +618,88 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		718444892AB1D7AA00A9B6CF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				718444882AB1D7AA00A9B6CF /* en */,
+				7184448A2AB1D7C600A9B6CF /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		7184446F2AB0926A00A9B6CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = pB.CoreDataStorage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		718444702AB0926A00A9B6CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = pB.CoreDataStorage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		71A254582AAF2D7600409270 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -359,6 +760,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -412,6 +814,7 @@
 		71A2545B2AAF2D7600409270 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,6 +843,7 @@
 		71A2545C2AAF2D7600409270 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +944,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7184446E2AB0926A00A9B6CF /* Build configuration list for PBXNativeTarget "CoreDataStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7184446F2AB0926A00A9B6CF /* Debug */,
+				718444702AB0926A00A9B6CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		71A254312AAF2D7400409270 /* Build configuration list for PBXProject "OFFODemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -577,6 +990,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7184448C2AB3230F00A9B6CF /* OFFODemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7184448D2AB3230F00A9B6CF /* OFFODemo.xcdatamodel */,
+			);
+			currentVersion = 7184448D2AB3230F00A9B6CF /* OFFODemo.xcdatamodel */;
+			path = OFFODemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 71A2542E2AAF2D7400409270 /* Project object */;
 }

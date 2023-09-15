@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22G74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CounterEntity" representedClassName="CounterEntity" syncable="YES">
+        <attribute name="account" optional="YES" attributeType="String"/>
+        <attribute name="isTwoTariff" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="serialNumber" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="Binary"/>
+        <attribute name="uid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="room" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="RoomEntity" inverseName="counters" inverseEntity="RoomEntity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="uid"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="RoomEntity" representedClassName="RoomEntity" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="counters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CounterEntity" inverseName="room" inverseEntity="CounterEntity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+</model>
