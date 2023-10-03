@@ -13,18 +13,18 @@ import Combine
 /// Protocol that describes a Domain model repository.
 public protocol DomainModelRepositoryProtocol {
 
-    associatedtype DomainViewModelType
+    associatedtype DomainModelType
 
-    var domainModelsPublisher: AnyPublisher<[DomainViewModelType], Never> { get }
+    var domainModelsPublisher: AnyPublisher<[DomainModelType], Never> { get }
 
     /// Get a Domain model using a predicate
-    func getDomainModels(predicate: NSPredicate?) async throws -> [DomainViewModelType]
+    func getDomainModels(predicate: NSPredicate?) async throws -> [DomainModelType]
     /// Creates a Domain model on the persistance layer.
-    func create(domainModel: DomainViewModelType) async throws
+    func create(domainModel: DomainModelType) async throws
     /// Creates or Updates existing Domain model on the persistance layer.
-    func save(domainModel: DomainViewModelType) async throws
+    func save(domainModel: DomainModelType) async throws
     /// Deletes a Domain model from the persistance layer.
-    func delete(domainModel: DomainViewModelType) async throws
+    func delete(domainModel: DomainModelType) async throws
     /// Saves changes to Repository.
     func saveChanges() async throws
     /// Starts fetching data from Repository.
@@ -33,17 +33,18 @@ public protocol DomainModelRepositoryProtocol {
 }
 
 /// Domain model Repository class.
-public final class DomainModelRepository<T: NSManagedObject&DomainModel> {
+public struct DomainModelRepository<T: DomainModelConvertible, U: Repository> where T == U.Entity {
 
     public typealias Entity = T
+    public typealias RepositoryType = U
 
     /// The Core Data Domain model repository.
-    private let repository: CoreDataRepository<Entity>
+    private let repository: RepositoryType
 
     /// Designated initializer
     /// - Parameter context: The context used for storing and quering Core Data.
-    public init(context: NSManagedObjectContext) {
-        self.repository = CoreDataRepository<Entity>(managedObjectContext: context)
+    public init(repository: RepositoryType) {
+        self.repository = repository
     }
 }
 
@@ -53,7 +54,7 @@ where Entity.DomainModelType: Identifiable,
 
     public typealias DomainModelType = Entity.DomainModelType
 
-    public var domainModelsPublisher: AnyPublisher<[DomainViewModelType], Never> {
+    public var domainModelsPublisher: AnyPublisher<[DomainModelType], Never> {
         repository.fetchedResultsPublisher
             .map { domainModelEntities in
                 domainModelEntities.map { $0.toDomainModel() }
@@ -102,6 +103,6 @@ where Entity.DomainModelType: Identifiable,
     /// Starts fetching with given NSPredicate and array of NSSortDescriptors.
     public func startFetchingWith(predicate: NSPredicate?,
                                   sortDescriptors: [NSSortDescriptor]?) throws {
-        try repository.startFetchingWith(predicate: predicate, sortDescriptors: sortDescriptors)
+        try repository.startFetchingWith(predicate: predicate, sortDescriptors: sortDescriptors, sectionNameKeyPath: nil)
     }
 }

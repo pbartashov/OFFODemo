@@ -10,3 +10,18 @@
 "storeDatabaseError" = "Невозможно добавить данные в хранилище";
 "invalidManagedObjectTypeDatabaseError" = "Не найдена модель объекта.";
 "notFoundDatabaseError" = "Объект не найден.";
+
+// CounterType
+"unknown" = "Неизвестно";
+"coldWater" = "ХОЛОДНАЯ ВОДА";
+"hotWater" = "ГОРЯЧАЯ ВОДА";
+"electric" = "ЭЛЕКТРИЧЕСТВО";
+"heat" = "ТЕПЛО";
+//"gas" = "ГАЗ";
+
+"shortUnknown" = "Неизвестно";
+"shortColdWater" = "ХВС";
+"shortHotWater" = "ГВС";
+"shortElectric" = "ЭЛ-ВО";
+"shortHeat" = "ТЕПЛО";
+//"shortGas" = "ГАЗ";

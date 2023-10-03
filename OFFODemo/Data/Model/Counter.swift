@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct Counter {
-    var id: UUID
+public struct Counter {
+    var id: UUID = UUID()
     var type: CounterType
-    var room: Room
+    var roomID: UUID
     var serialNumber: String
     var account: String
     var isTwoTariff: Bool

@@ -19,15 +19,24 @@ struct CounterList<T: CounterListViewModelProtocol>: View {
     var body: some View {
         NavigationView {
             List(selection: $selectedCounter) {
-                ForEach(viewModel.rooms) { counter in
-                    NavigationLink {
-//                        LandmarkDetail(landmark: counter)
-                        Text("Details")
-                    } label: {
-//                        LandmarkRow(landmark: counter)
-                        Text("counter.description")
+                ForEach(viewModel.roomVMs) { roomVM in
+                    Section {
+                        Text(roomVM.name)
+                        ForEach(roomVM.counters) { counterVM in
+                            NavigationLink {
+                                //                        LandmarkDetail(landmark: counter)
+                                Text("Details")
+                            } label: {
+                                //                        LandmarkRow(landmark: counter)
+                                Text(counterVM.serialNumber)
+                            }
+                        }
                     }
-                    .tag(counter)
+
+
+
+
+//                    .tag(counter)
                 }
             }
             .navigationTitle("title")
@@ -61,6 +70,10 @@ struct CounterList<T: CounterListViewModelProtocol>: View {
 
 struct CounterList_Previews: PreviewProvider {
     static var previews: some View {
-        CounterList(viewModel: CounterListViewModelSample())
+        CounterList(
+            viewModel: RoomsAndCountersListViewModel(
+                storage: RoomStorageSample(),
+                makeRoomViewModel: ViewModelMakerSample.makeRoomViewModel(_:))
+        )
     }
 }

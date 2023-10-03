@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-       CounterList(viewModel: CounterListViewModel(storage: CounterStorage()))
+        CounterList(viewModel: RoomsAndCountersListViewModel(storage: RoomStorageSample(), makeRoomViewModel: ViewModelMakerSample.makeRoomViewModel(_:)))
     }
 }
 

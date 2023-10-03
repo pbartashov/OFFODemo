@@ -2,7 +2,7 @@
 //  RoomEntity+CoreDataProperties.swift
 //  OFFODemo
 //
-//  Created by Павел Барташов on 14.09.2023.
+//  Created by Павел Барташов on 19.09.2023.
 //
 //
 
@@ -17,6 +17,7 @@ extension RoomEntity {
     }
 
     @NSManaged public var name: String?
+    @NSManaged public var uid: UUID?
     @NSManaged public var counters: NSSet?
 
 }
@@ -38,6 +39,6 @@ extension RoomEntity {
 
 }
 
-extension RoomEntity : Identifiable {
-
-}
+//extension RoomEntity : Identifiable {
+//
+//}

@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct Room {
-    let id: UUID = UUID()
-    let name: String
+public struct Room {
+    public var id: UUID = UUID()
+    var name: String
+    var counters: Set<Counter> = []
 }
 
 extension Room: Hashable { }

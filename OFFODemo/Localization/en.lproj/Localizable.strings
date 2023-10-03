@@ -10,3 +10,17 @@
 "storeDatabaseError" = "Unable to add data to storage";
 "invalidManagedObjectTypeDatabaseError" = "Object model not found.";
 "notFoundDatabaseError" = "Object not found.";
+
+// CounterType
+"unknown" = "Unknown";
+"coldWater" = "Cold water";
+"hotWater" = "Hot water";
+"electric" = "Electric";
+"heat" = "Heat";
+
+"shortUnknown" = "Unknown";
+"shortColdWater" = "CW";
+"shortHotWater" = "HW";
+"shortElectric" = "EL";
+"shortHeat" = "Heat";
+

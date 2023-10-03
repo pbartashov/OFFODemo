@@ -24,7 +24,7 @@ extension CounterEntity {
     @NSManaged public var room: RoomEntity?
 
 }
-
-extension CounterEntity : Identifiable {
-
-}
+//
+//extension CounterEntity : Identifiable {
+//
+//}

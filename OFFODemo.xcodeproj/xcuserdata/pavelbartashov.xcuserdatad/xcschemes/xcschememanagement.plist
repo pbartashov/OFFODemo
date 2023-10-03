@@ -7,7 +7,7 @@
 		<key>CoreDataStorage.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>CoreDataStorage1.xcscheme_^#shared#^_</key>
 		<dict>
@@ -18,6 +18,24 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>71A254352AAF2D7400409270</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71A254452AAF2D7600409270</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71A2544F2AAF2D7600409270</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

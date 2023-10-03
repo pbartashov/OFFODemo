@@ -9,7 +9,7 @@ import CoreData
 import Combine
 
 //https://www.userdesk.io/blog/repository-pattern-using-core-data-and-swift/
-protocol Repository {
+public protocol Repository {
     /// The entity managed by the repository.
     associatedtype Entity
 
