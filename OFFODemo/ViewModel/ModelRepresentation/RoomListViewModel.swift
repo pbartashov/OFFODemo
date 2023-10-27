@@ -17,6 +17,7 @@ struct RoomListViewModel {
 
     // MARK: - Properties
 
+    
 //    private let makeCounterViewModel: (Counter) -> CounterListViewModel
 
     var id: UUID

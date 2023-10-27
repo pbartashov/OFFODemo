@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct OFFODemoApp: App {
+
+    @StateObject private var dependencyContainer = AppDependencyContainer()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            dependencyContainer.makeAppCoordinatorView()
         }
     }
 }

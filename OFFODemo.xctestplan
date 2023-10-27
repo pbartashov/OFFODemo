@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "CADED318-3FA2-4FEC-AF6C-0CB74A96343D",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:OFFODemo.xcodeproj",
+      "identifier" : "71A254352AAF2D7400409270",
+      "name" : "OFFODemo"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:OFFODemo.xcodeproj",
+        "identifier" : "71A254452AAF2D7600409270",
+        "name" : "OFFODemoTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:OFFODemo.xcodeproj",
+        "identifier" : "71A2544F2AAF2D7600409270",
+        "name" : "OFFODemoUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

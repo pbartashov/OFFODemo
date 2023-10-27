@@ -27,7 +27,7 @@ public struct CounterListViewModel {
 //    }
 
 //    var name: String = ""
-    public var id: UUID
+    public let id: UUID
     var type: CounterType
     var serialNumber: String
 
@@ -37,7 +37,7 @@ public struct CounterListViewModel {
         self.id = counter.id
         self.type = counter.type
         self.serialNumber = counter.serialNumber
-   }
+    }
 
     // MARK: - Metods
 
@@ -51,4 +51,41 @@ extension CounterListViewModel: Identifiable {
 //    public var id: UUID {
 //        counter.id
 //    }
+}
+
+extension CounterListViewModel {
+    var typeTitle: String {
+        switch type {
+            case .unknown:
+                "unknown"
+            case .coldWater:
+                "coldWater"
+            case .hotWater:
+                "hotWater"
+            case .electric:
+                "electric"
+            case .heat:
+                "heat"
+                //            case .gas:
+                //                "gas".localized
+        }
+    }
+
+    var typeAsEmoji: String {
+        switch type {
+            case .unknown:
+                "?"
+            case .coldWater:
+                "❄"
+            case .hotWater:
+                "♨"
+            case .electric:
+                "⌁"
+            case .heat:
+                "☀"
+                //            case .gas:
+                //                "☁"
+        }
+    }
+
 }

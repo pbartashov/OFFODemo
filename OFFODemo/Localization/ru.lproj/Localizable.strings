@@ -2,7 +2,7 @@
   Localizable.strings
   OFFODemo
 
-  Created by Павел Барташов on 13.09.2023.
+  Created by Павел Барташов on 03.10.2023.
   
 */
 
@@ -25,3 +25,7 @@
 "shortElectric" = "ЭЛ-ВО";
 "shortHeat" = "ТЕПЛО";
 //"shortGas" = "ГАЗ";
+
+"CounterInfo" = "Информация о счетчике";
+"SerialNumber" = "Серийный номер";
+

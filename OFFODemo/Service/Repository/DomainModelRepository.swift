@@ -33,10 +33,10 @@ public protocol DomainModelRepositoryProtocol {
 }
 
 /// Domain model Repository class.
-public struct DomainModelRepository<T: DomainModelConvertible, U: Repository> where T == U.Entity {
+public struct DomainModelRepository<T: Repository> where T.Entity: DomainModelConvertible {
 
-    public typealias Entity = T
-    public typealias RepositoryType = U
+    public typealias RepositoryType = T
+    public typealias Entity = T.Entity
 
     /// The Core Data Domain model repository.
     private let repository: RepositoryType

@@ -11,32 +11,12 @@ struct CounterListRow: View {
     var counterVM: CounterListViewModel
     var body: some View {
         HStack {
-            Text(counterVM.type.asEmoji)
-            Text(counterVM.type.title)
+            Text(counterVM.typeAsEmoji)
+            Text(localized: counterVM.typeTitle)
+            Spacer()
             Text(counterVM.serialNumber)
         }
     }
-}
-
-extension CounterType {
-    var asEmoji: String {
-        switch self {
-            case .unknown:
-                "?"
-            case .coldWater:
-                "❄"
-            case .hotWater:
-                "♨"
-            case .electric:
-                "⌁"
-            case .heat:
-                "☀"
-                //            case .gas:
-                //                "☁"
-        }
-    }
-
-
 }
 
 

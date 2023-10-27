@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CounterList<T: CounterListViewModelProtocol>: View {
+struct CounterList<T: RoomsAndCountersListViewModelProtocol>: View {
 
     typealias ViewModelType = T
     @StateObject var viewModel: ViewModelType
@@ -28,7 +28,8 @@ struct CounterList<T: CounterListViewModelProtocol>: View {
                                 Text("Details")
                             } label: {
                                 //                        LandmarkRow(landmark: counter)
-                                Text(counterVM.serialNumber)
+                                CounterListRow(counterVM: counterVM)
+                                  
                             }
                         }
                     }
@@ -60,7 +61,7 @@ struct CounterList<T: CounterListViewModelProtocol>: View {
 //                }
 //            }
 
-            Text("Select a counter".localized)
+            Text("Select a counter")
         }
 
 
@@ -72,6 +73,7 @@ struct CounterList_Previews: PreviewProvider {
     static var previews: some View {
         CounterList(
             viewModel: RoomsAndCountersListViewModel(
+                coordinator: AppCoordinatorObjectSample(), 
                 storage: RoomStorageSample(),
                 makeRoomViewModel: ViewModelMakerSample.makeRoomViewModel(_:))
         )
