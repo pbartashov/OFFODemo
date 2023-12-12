@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct OFFODemoApp: App {
 
-    @StateObject private var dependencyContainer = AppDependencyContainer()
+    #warning("@StateObject")//@StateObject
+//    private var dependencyContainer = AppDependencyContainer()
 
     var body: some Scene {
         WindowGroup {
-            dependencyContainer.makeAppCoordinatorView()
+//            dependencyContainer.makeAppCoordinatorView()
+            Text(verbatim: "Placeholder")
         }
     }
 }

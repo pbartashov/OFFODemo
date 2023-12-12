@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710D57E72B039E5F00232013 /* -TestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D57E62B039E5F00232013 /* -TestCoordinator.swift */; };
+		711F7A032AF8B86B002AE49F /* -AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7A022AF8B86B002AE49F /* -AppCoordinator.swift */; };
 		7175D94F2AC450880065B114 /* RoomEntity+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175D94E2AC450880065B114 /* RoomEntity+.swift */; };
 		7175D9512ACAE87B0065B114 /* CounterDetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175D9502ACAE87B0065B114 /* CounterDetailedViewModel.swift */; };
 		7175D9542ACAEDBB0065B114 /* CounterListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175D9532ACAEDBB0065B114 /* CounterListRow.swift */; };
@@ -56,7 +58,9 @@
 		71CAAE042AEA85D0000D0F37 /* AppCoordinatorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAAE032AEA85D0000D0F37 /* AppCoordinatorObject.swift */; };
 		71CAAE062AEA876A000D0F37 /* AppCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAAE052AEA876A000D0F37 /* AppCoordinatorView.swift */; };
 		71CAAE082AEBE90F000D0F37 /* UUID+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAAE072AEBE90F000D0F37 /* UUID+.swift */; };
-		71CAAE0A2AEBEB7B000D0F37 /* AppCoordinatorObjectSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAAE092AEBEB7B000D0F37 /* AppCoordinatorObjectSample.swift */; };
+		71CAAE0A2AEBEB7B000D0F37 /* -AppCoordinatorObjectSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAAE092AEBEB7B000D0F37 /* -AppCoordinatorObjectSample.swift */; };
+		71F735822AFCF6F2004145DB /* StorageDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F735812AFCF6F2004145DB /* StorageDependencyContainer.swift */; };
+		71F735842AFCFD94004145DB /* -SampleStorageDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F735832AFCFD94004145DB /* -SampleStorageDependencyContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +94,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		710D57E62B039E5F00232013 /* -TestCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "-TestCoordinator.swift"; sourceTree = "<group>"; };
+		710D57E82B04F1B100232013 /* OFFODemo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = OFFODemo.playground; path = ../OFFODemo.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		711F7A022AF8B86B002AE49F /* -AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "-AppCoordinator.swift"; sourceTree = "<group>"; };
 		7175D94E2AC450880065B114 /* RoomEntity+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoomEntity+.swift"; sourceTree = "<group>"; };
 		7175D9502ACAE87B0065B114 /* CounterDetailedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterDetailedViewModel.swift; sourceTree = "<group>"; };
 		7175D9532ACAEDBB0065B114 /* CounterListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterListRow.swift; sourceTree = "<group>"; };
@@ -143,7 +150,9 @@
 		71CAAE032AEA85D0000D0F37 /* AppCoordinatorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorObject.swift; sourceTree = "<group>"; };
 		71CAAE052AEA876A000D0F37 /* AppCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorView.swift; sourceTree = "<group>"; };
 		71CAAE072AEBE90F000D0F37 /* UUID+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UUID+.swift"; sourceTree = "<group>"; };
-		71CAAE092AEBEB7B000D0F37 /* AppCoordinatorObjectSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorObjectSample.swift; sourceTree = "<group>"; };
+		71CAAE092AEBEB7B000D0F37 /* -AppCoordinatorObjectSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "-AppCoordinatorObjectSample.swift"; sourceTree = "<group>"; };
+		71F735812AFCF6F2004145DB /* StorageDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDependencyContainer.swift; sourceTree = "<group>"; };
+		71F735832AFCFD94004145DB /* -SampleStorageDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "-SampleStorageDependencyContainer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +182,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		711F7A042AF8C593002AE49F /* SwiftUISpecific */ = {
+			isa = PBXGroup;
+			children = (
+				71CAAE032AEA85D0000D0F37 /* AppCoordinatorObject.swift */,
+				71CAAE052AEA876A000D0F37 /* AppCoordinatorView.swift */,
+			);
+			path = SwiftUISpecific;
+			sourceTree = "<group>";
+		};
 		7175D9522ACAED9D0065B114 /* CounterList */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				7184447B2AB0969F00A9B6CF /* AppDependencyContainer.swift */,
+				71F735812AFCF6F2004145DB /* StorageDependencyContainer.swift */,
 			);
 			path = DependencyContainer;
 			sourceTree = "<group>";
@@ -279,8 +298,9 @@
 				718A3F1B2AB4789C0013DEBF /* RoomSample.swift */,
 				718A3F322AB9BC720013DEBF /* CounterSample.swift */,
 				718A3F2E2AB6CD6B0013DEBF /* RoomStorageSample.swift */,
-				71CAAE092AEBEB7B000D0F37 /* AppCoordinatorObjectSample.swift */,
+				71CAAE092AEBEB7B000D0F37 /* -AppCoordinatorObjectSample.swift */,
 				718A3F302AB6D0E70013DEBF /* ViewModelMakerSample.swift */,
+				71F735832AFCFD94004145DB /* -SampleStorageDependencyContainer.swift */,
 			);
 			path = SampleData;
 			sourceTree = "<group>";
@@ -333,6 +353,7 @@
 		71A2542D2AAF2D7400409270 = {
 			isa = PBXGroup;
 			children = (
+				710D57E82B04F1B100232013 /* OFFODemo.playground */,
 				71A9BDF12ADEC1F80016B913 /* OFFODemo.xctestplan */,
 				71A254382AAF2D7400409270 /* OFFODemo */,
 				71A254492AAF2D7600409270 /* OFFODemoTests */,
@@ -419,6 +440,7 @@
 			isa = PBXGroup;
 			children = (
 				71CAAE022AEA85AC000D0F37 /* AppCoordinator */,
+				710D57E62B039E5F00232013 /* -TestCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -426,8 +448,8 @@
 		71CAAE022AEA85AC000D0F37 /* AppCoordinator */ = {
 			isa = PBXGroup;
 			children = (
-				71CAAE032AEA85D0000D0F37 /* AppCoordinatorObject.swift */,
-				71CAAE052AEA876A000D0F37 /* AppCoordinatorView.swift */,
+				711F7A042AF8C593002AE49F /* SwiftUISpecific */,
+				711F7A022AF8B86B002AE49F /* -AppCoordinator.swift */,
 			);
 			path = AppCoordinator;
 			sourceTree = "<group>";
@@ -581,6 +603,7 @@
 				7193C6D82AC1B29000110046 /* DomainModelConvertible.swift in Sources */,
 				7175D95C2ACC38B90065B114 /* Text+.swift in Sources */,
 				718A3F2C2AB5E50B0013DEBF /* -RoomStorage.swift in Sources */,
+				711F7A032AF8B86B002AE49F /* -AppCoordinator.swift in Sources */,
 				718444512AB090E700A9B6CF /* -PostRepository.swift in Sources */,
 				7184447A2AB093E500A9B6CF /* CoreDataRepository+.swift in Sources */,
 				7175D94F2AC450880065B114 /* RoomEntity+.swift in Sources */,
@@ -605,17 +628,20 @@
 				7184447C2AB0969F00A9B6CF /* AppDependencyContainer.swift in Sources */,
 				7184444C2AB08F9000A9B6CF /* -CounterStorage.swift in Sources */,
 				718CF6302AAF339400D31A10 /* Room.swift in Sources */,
+				71F735822AFCF6F2004145DB /* StorageDependencyContainer.swift in Sources */,
 				718444AC2AB32BC700A9B6CF /* CounterListViewModel.swift in Sources */,
 				71CAADFA2AE69258000D0F37 /* AddablePicker.swift in Sources */,
 				71CAAE082AEBE90F000D0F37 /* UUID+.swift in Sources */,
 				718444482AB0873F00A9B6CF /* RoomsAndCountersListViewModel.swift in Sources */,
+				710D57E72B039E5F00232013 /* -TestCoordinator.swift in Sources */,
 				718A3F2F2AB6CD6B0013DEBF /* RoomStorageSample.swift in Sources */,
+				71F735842AFCFD94004145DB /* -SampleStorageDependencyContainer.swift in Sources */,
 				718A3F372AB9C3640013DEBF /* RoomEntity+CoreDataProperties.swift in Sources */,
 				718A3F252AB487AC0013DEBF /* -String+.swift in Sources */,
 				718444502AB090E700A9B6CF /* Repository.swift in Sources */,
 				7184447F2AB1D05300A9B6CF /* DomainModelRepository.swift in Sources */,
 				71CAAE062AEA876A000D0F37 /* AppCoordinatorView.swift in Sources */,
-				71CAAE0A2AEBEB7B000D0F37 /* AppCoordinatorObjectSample.swift in Sources */,
+				71CAAE0A2AEBEB7B000D0F37 /* -AppCoordinatorObjectSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

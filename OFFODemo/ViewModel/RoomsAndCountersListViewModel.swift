@@ -8,19 +8,24 @@
 import Combine
 
 @MainActor
-protocol RoomsAndCountersListViewModelProtocol: ObservableObject {
+protocol RoomsAndCountersListViewModeling: ObservableObject {
 //    var roomsPublisher: AnyPublisher<[any RoomViewModelProtocol], Never> { get }
     var roomVMs: [RoomListViewModel] { get }
+
+    func open(_: CounterListViewModel)
 }
 
 @MainActor
-final class RoomsAndCountersListViewModel<T, U>: ObservableObject, RoomsAndCountersListViewModelProtocol
-where T: DomainModelRepositoryProtocol, T.DomainModelType == Room,
-      U: AppCoordinatorObjectProtocol
+final class RoomsAndCountersListViewModel: RoomsAndCountersListViewModeling
+//where T: DomainModelRepositoryProtocol, T.DomainModelType == Room
+//      where U: AppCoordinatorProtocol
 {
+//    typealias StorageType = T
+//    typealias CoordinatorType = U
+
     // MARK: - Properties
-    private let coordinator: U
-    private let storage: T
+    private unowned var coordinator: AppCoordinatorProtocol
+//    private let storage: StorageType
 
     @Published var roomVMs: [RoomListViewModel] = []
 
@@ -33,26 +38,30 @@ where T: DomainModelRepositoryProtocol, T.DomainModelType == Room,
     // MARK: - LifeCicle
 
     init(
-        coordinator: U,
-        storage: T,
+        coordinator: AppCoordinatorProtocol,
+//        storage: StorageType,
         makeRoomViewModel: @escaping (Room) -> RoomListViewModel
     ) {
         self.coordinator = coordinator
-        self.storage = storage
-
-        storage
-            .domainModelsPublisher
-            .map { rooms in
-                rooms.compactMap { makeRoomViewModel($0) }
-            }
-            .assign(to: &$roomVMs)
+//        self.storage = storage
+//
+//        storage
+//            .domainModelsPublisher
+//            .map { rooms in
+//                rooms.compactMap { makeRoomViewModel($0) }
+//            }
+//            .assign(to: &$roomVMs)
     }
 
     // MARK: - Metods
 
+    func open(_ counterListViewModel: CounterListViewModel) {
 
-
-
+//        let counter = storage.getDomainModels(predicate: <#T##NSPredicate?#>)
+        let counter = Counter.counterSampleBath1
+//        return CounterDetailedViewModel(counter: counter)
+        coordinator.openDetails(for: counter)
+    }
 }
 
 

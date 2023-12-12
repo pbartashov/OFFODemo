@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        CounterList(viewModel: RoomsAndCountersListViewModel(coordinator: AppCoordinatorObjectSample(), storage: RoomStorageSample(), makeRoomViewModel: ViewModelMakerSample.makeRoomViewModel(_:)))
+//        CounterList(viewModel: RoomsAndCountersListViewModel(coordinator: AppCoordinatorObjectSample(), storage: RoomStorageSample(), makeRoomViewModel: ViewModelMakerSample.makeRoomViewModel(_:)))
+       Text(DateInterval(start: Date(), end: Date()))
     }
 }
 

@@ -7,58 +7,76 @@
 
 import Foundation
 import Combine
-import CoreDataStorage
 
 protocol AppDependencyContainerProtocol: AnyObject {
-    associatedtype CoordinatorType: AppCoordinatorProtocol
-    associatedtype RoomsAndCountersListViewModelType: RoomsAndCountersListViewModelProtocol
+//    associatedtype AppCoordinatorViewType: AppCoordinatorViewProtocol
+//    associatedtype RoomsAndCountersListViewModelType: RoomsAndCountersListViewModelProtocol
 
-    func makeAppCoordinatorView() -> CoordinatorType
-    func makeRoomsAndCountersListViewModel() -> RoomsAndCountersListViewModelType
-
-
-
+//    func makeAppCoordinatorView() -> AppCoordinatorViewType
+//    func makeRoomsAndCountersListViewModel(appCoordinatorObject: AppCoordinatorObject<Self>) -> RoomsAndCountersListViewModelType
+    func makeRoomsAndCountersListViewModel(appCoordinatorObject: AppCoordinatorObject) -> any RoomsAndCountersListViewModeling
+//    func makeRoomsAndCountersListViewModel(appCoordinatorObject: AppCoordinatorObject<Self>) -> RoomsAndCountersListViewModelType
+    func makeCounterDetailedViewModel(for: Counter) -> CounterDetailedViewModel
 }
 
 final class AppDependencyContainer: AppDependencyContainerProtocol {
+//    func makeRoomsAndCountersListViewModel(appCoordinatorObject: AppCoordinatorObject<RoomsAndCountersListViewModel>) -> RoomsAndCountersListViewModel {
+//        <#code#>
+//    }
+//    
+//    typealias RoomsAndCountersListViewModelType = RoomsAndCountersListViewModel
+
+//where T: StorageDependencyContainerProtocol {
+
+//    typealias StorageDependencyContainerType = T
 
     // MARK: - Properties
 
-    private var appCoordinatorObject: AppCoordinatorObject!
-    private let contextProvider: CoreDataContextProvider
+//    private var appCoordinatorObject: AppCoordinatorObject<AppDependencyContainer>!
+//    private var storageDependencyContainer: StorageDependencyContainerType
 
 
     // MARK: - LifeCicle
 
-    init() {
-        guard let bundle = Bundle(identifier: "pB.OFFODemo") else {
-            fatalError("Failed to load Core Data model")
-        }
-        
-        self.contextProvider = CoreDataContextProvider(
-            bundle: bundle,
-            managedObjectModelFileName: "OFFODemo",
-            persistentContainerName: "OFFODemo"
-        )
-    }
+    init() {}
+//    init(storageDependencyContainer: StorageDependencyContainerType = StorageDependencyContainer()) {
+//        self.storageDependencyContainer = storageDependencyContainer
+//    }
 
     // MARK: - Metods
 
-    func makeAppCoordinatorView() -> some AppCoordinatorProtocol {
+    @MainActor
+    func makeAppCoordinatorView() -> some AppCoordinatorViewProtocol {
         let appCoordinatorObject = AppCoordinatorObject(dependencyContainer: self)
-        self.appCoordinatorObject = appCoordinatorObject
-
-        return AppCoordinatorView(object: appCoordinatorObject)
+        let appCoordinatorView = AppCoordinatorView(coordinatorObject: appCoordinatorObject)
+//        let appCoordinatorView = AppCoordinatorView(coordinatorObject: AppCoordinatorObject2())
+//        self.appCoordinatorObject = appCoordinatorObject
+//
+        return appCoordinatorView
+//        return TestCoordinator()
     }
 
+//    func makeAppCoordinatorView<T, U>() -> AppCoordinatorView<T, U> {
+//        let appCoordinatorObject = AppCoordinatorObject<U>(dependencyContainer: self)
+//                let appCoordinatorView = AppCoordinatorView<T,U>(coordinatorObject: appCoordinatorObject)
+////        let appCoordinatorView = AppCoordinatorView(coordinatorObject: AppCoordinatorObject())
+//        //        self.appCoordinatorObject = appCoordinatorObject
+//        //
+//        return appCoordinatorView
+//        //        return TestCoordinator()
+//    }
+    
+
     @MainActor 
-    func makeRoomsAndCountersListViewModel() -> some RoomsAndCountersListViewModelProtocol {
-        let repository = CoreDataRepository<RoomEntity>(managedObjectContext: contextProvider.backgroundContext)
-        let storage = DomainModelRepository(repository: repository)
+    func makeRoomsAndCountersListViewModel(
+        appCoordinatorObject: AppCoordinatorObject<AppDependencyContainer>
+    ) -> RoomsAndCountersListViewModel {
+
+//        let storage = storageDependencyContainer.makeRoomStorage()
 
         return RoomsAndCountersListViewModel(
             coordinator: appCoordinatorObject,
-            storage: storage,
+//            storage: storage,
             makeRoomViewModel: makeRoomListViewModel(for:)
         )
     }
@@ -69,6 +87,11 @@ final class AppDependencyContainer: AppDependencyContainerProtocol {
 
     private func makeCounterViewModel(for counter: Counter) -> CounterListViewModel {
         CounterListViewModel(counter: counter)
+    }
+
+    @MainActor
+    func makeCounterDetailedViewModel(for counter: Counter) -> CounterDetailedViewModel {
+        CounterDetailedViewModel(counter: counter)
     }
 }
 

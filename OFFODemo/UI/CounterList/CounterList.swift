@@ -7,50 +7,77 @@
 
 import SwiftUI
 
-struct CounterList<T: RoomsAndCountersListViewModelProtocol>: View {
+struct CounterList<ViewModel>: View
+where ViewModel: RoomsAndCountersListViewModeling {
+//<T: RoomsAndCountersListViewModelProtocol&ObservableObject>: View {
+//struct CounterList: View {
+//    typealias ViewModelType = T
+//    @Binding var viewModel: ViewModelType
 
-    typealias ViewModelType = T
-    @StateObject var viewModel: ViewModelType
+
+    @ObservedObject var viewModel: ViewModel
 
 //    @EnvironmentObject var modelData: ModelData
 
     @State private var selectedCounter: Counter?
 
+//    init(viewModel: some RoomsAndCountersListViewModeling, selectedCounter: Counter? = nil) {
+////        self.viewModel = viewModel
+////        self.selectedCounter = selectedCounter
+//        self.init(viewModel)
+//    }
+//
+//    init(_ viewModel: ViewModel) {
+//        self.viewModel = viewModel
+//    }
+
     var body: some View {
-        NavigationView {
-            List(selection: $selectedCounter) {
-                ForEach(viewModel.roomVMs) { roomVM in
-                    Section {
-                        Text(roomVM.name)
-                        ForEach(roomVM.counters) { counterVM in
-                            NavigationLink {
-                                //                        LandmarkDetail(landmark: counter)
-                                Text("Details")
-                            } label: {
-                                //                        LandmarkRow(landmark: counter)
-                                CounterListRow(counterVM: counterVM)
-                                  
+
+//        List(
+//            $viewModel.roomVMs,
+//            editActions: [.delete, .move],
+//            selection: $selectedCounter
+//        ) { $roomVM in
+
+        List(selection: $selectedCounter) {
+            ForEach(viewModel.roomVMs) { roomVM in
+                Section {
+                    Text(roomVM.name)
+                    ForEach(roomVM.counters) { counterVM in
+                        CounterListRow(counterVM: counterVM)
+                            .onNavigation {
+                                viewModel.open(counterVM)
                             }
-                        }
-                    }
 
-
-
-
-//                    .tag(counter)
-                }
-            }
-            .navigationTitle("title")
-            .frame(minWidth: 300)
-//            .toolbar {
-//                ToolbarItem {
-//                    Menu {
-//                        Picker("Category", selection: $filter) {
-//                            ForEach(FilterCategory.allCases) { category in
-//                                Text(category.rawValue).tag(category)
-//                            }
+//                        NavigationLink {
+//                            //                        LandmarkDetail(landmark: counter)
+//                            Text("Details")
+//                        } label: {
+//                            //                        LandmarkRow(landmark: counter)
+//                            CounterListRow(counterVM: counterVM)
+//
 //                        }
-//                        .pickerStyle(.inline)
+                    }
+                }
+
+
+
+
+                //                    .tag(counter)
+            }
+        }
+        .navigationTitle("title")
+        .frame(minWidth: 300)
+        .listStyle(.plain)
+        //            .toolbar {
+        //                ToolbarItem {
+    //                    Menu {
+    //                        Picker("Category", selection: $filter) {
+    //                            ForEach(FilterCategory.allCases) { category in
+    //                                Text(category.rawValue).tag(category)
+    //                            }
+    //                        }
+    //                        .pickerStyle(.inline)
 //
 //                        Toggle(isOn: $showFavoritesOnly) {
 //                            Label("Favorites only", systemImage: "star.fill")
@@ -62,20 +89,19 @@ struct CounterList<T: RoomsAndCountersListViewModelProtocol>: View {
 //            }
 
             Text("Select a counter")
-        }
+        
 
 
 //        .focusedValue(\.selectedCounter, $modelData.landmarks[index ?? 0])
     }
 }
 
-struct CounterList_Previews: PreviewProvider {
-    static var previews: some View {
-        CounterList(
-            viewModel: RoomsAndCountersListViewModel(
-                coordinator: AppCoordinatorObjectSample(), 
-                storage: RoomStorageSample(),
-                makeRoomViewModel: ViewModelMakerSample.makeRoomViewModel(_:))
-        )
-    }
+#Preview {
+    Text("bhbj125")
+//    CounterList(
+//        viewModel: RoomsAndCountersListViewModel(
+//            coordinator: AppCoordinatorObjectSample(),
+//            storage: RoomStorageSample(),
+//            makeRoomViewModel: ViewModelMakerSample.makeRoomViewModel(_:))
+//    )
 }
